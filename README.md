@@ -1,4 +1,4 @@
-# ATX-Bench-Power-Supply
+<img width="736" height="334" alt="image" src="https://github.com/user-attachments/assets/628dc937-4f30-440c-a31d-704947ef91af" /># ATX-Bench-Power-Supply
 #Project 1: ATX Bench Power Supply
 
 ---
@@ -41,6 +41,14 @@ The original power supply is a **Lemel ATX500W** unit with a maximum combined po
 | **+5 VSB**[cite: 13] | Internal | Indicator LED | Standby indicator power |
 | **0 - 30 V (Adj.)** | Fuse + V/A Meter | Banana Jack | Variable regulated bench output |
 | **GND (0 V)** | Common Return | Banana Jack (Black) | Common ground reference |
+* **Nameplate Specifications:**
+  * Maximum Output Capacity: 500 W
+* **Connector Pin Configuration & Enclosure:**
+<img width="719" height="334" alt="image" src="https://github.com/user-attachments/assets/36330599-e2db-4249-946e-5fd3748ff83c" />
+
+* **Reference Source:** [Cirkit Designer ATX Component Documentation](https://docs.cirkitdesigner.com/component/1ce54fb2-2242-415e-a64d-dcc2a715ca80/atx-power-supply)
+
+
 
 ---
 
