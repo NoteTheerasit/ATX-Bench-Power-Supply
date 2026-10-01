@@ -30,23 +30,24 @@ Safety was strictly considered throughout the modification process:
 
 ## 3. Power Supply Specifications
 
-The original power supply is a **Lemel ATX500W** unit with a maximum combined power rating of 500 W.
+The original power supply is a **Lemel ATX500W** unit with a maximum combined power rating of 500 W[cite: 13].
 
-| Output Rail | Rated Current | Protection | Output Terminal | Application / Purpose |
-| :--- | :--- | :--- | :--- | :--- |
-| **+3.3 V** | 22 A | Fuse | Banana Jack | Microcontroller circuits (ESP32, ARM) |
-| **+5 V** | 14 A | Fuse | Banana Jack | Logic circuits, Arduino, USB power |
-| **+12 V** | 14 A | Fuse | Banana Jack | Motors, fans, high-current DC loads |
-| **-12 V** | 0.8 A | Fuse | Banana Jack | Op-Amp and audio circuits |
-| **+5 VSB** | 2.5 A | Internal | Indicator LED | Standby indicator power |
-| **0 - 30 V (Adj.)** | Controlled via CC/CV | Fuse + V/A Meter | Banana Jack | Variable regulated bench output |
-| **GND (0 V)** | - | Common Return | Banana Jack (Black) | Common ground reference |
+| Output Rail | Protection | Output Terminal | Application / Purpose |
+| :--- | :--- | :--- | :--- |
+| **+3.3 V**[cite: 13] | Fuse | Banana Jack | Microcontroller circuits (ESP32, ARM) |
+| **+5 V**[cite: 13] | Fuse | Banana Jack | Logic circuits, Arduino, USB power |
+| **+12 V**[cite: 13] | Fuse | Banana Jack | Motors, fans, high-current DC loads |
+| **-12 V**[cite: 13] | Fuse | Banana Jack | Op-Amp and audio circuits |
+| **+5 VSB**[cite: 13] | Internal | Indicator LED | Standby indicator power |
+| **0 - 30 V (Adj.)** | Fuse + V/A Meter | Banana Jack | Variable regulated bench output |
+| **GND (0 V)** | Common Return | Banana Jack (Black) | Common ground reference |
 
 ---
 
 ## 4. Schematic & Circuit Design
 
-<!-- ลากไฟล์รูปวงจร KiCad มาปล่อยวางตรงบรรทัดนี้ -->[Project 1_ ATX Bench Power Supply.pdf](https://github.com/user-attachments/files/32916514/Project.1_.ATX.Bench.Power.Supply.pdf)
+[Project.1_.ATX.Bench.Power.Supply.pdf](https://github.com/user-attachments/files/32916661/Project.1_.ATX.Bench.Power.Supply.pdf)
+
 
 
 ---
