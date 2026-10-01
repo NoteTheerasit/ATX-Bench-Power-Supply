@@ -32,7 +32,7 @@ The original power supply is a **Lemel ATX500W** unit with a maximum combined po
 | :--- | :--- | :--- | :--- |
 | **+3.3 V**[cite: 13] | Fuse | Banana Jack | Microcontroller circuits (ESP32, ARM) |
 | **+5 V**[cite: 13] | Fuse | Banana Jack | Logic circuits, Arduino, USB power |
-| **+12 V**[cite: 13] | Fuse | Cigarette Litter | Motors, fans, high-current DC loads |
+| **+12 V**[cite: 13] | Fuse | Cigarette Lighter Socket   | Motors, fans, high-current DC loads |
 | **-12 V**[cite: 13] | Fuse | Banana Jack | Op-Amp and audio circuits |
 | **+5 VSB**[cite: 13] | Internal | Indicator LED | Standby indicator power |
 | **0 - 30 V (Adj.)** | Fuse + V/A Meter | Banana Jack | Variable regulated bench output |
@@ -77,8 +77,8 @@ $$P_{loss} = 10^2 \times 0.01 = 1\text{ W}$$
 
 ---
 
-##6.Photographs
-* **Chang Potentiometer **
+## 6. Photographs
+* **Replacing Potentiometer **
 
 <img width="1706" height="960" alt="94069" src="https://github.com/user-attachments/assets/887c2e54-95ca-44a7-9d93-0be7aaab2510" />
 
