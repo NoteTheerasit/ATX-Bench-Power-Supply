@@ -36,7 +36,7 @@ The original power supply is a **Lemel ATX500W** unit with a maximum combined po
 | :--- | :--- | :--- | :--- |
 | **+3.3 V**[cite: 13] | Fuse | Banana Jack | Microcontroller circuits (ESP32, ARM) |
 | **+5 V**[cite: 13] | Fuse | Banana Jack | Logic circuits, Arduino, USB power |
-| **+12 V**[cite: 13] | Fuse | Banana Jack | Motors, fans, high-current DC loads |
+| **+12 V**[cite: 13] | Fuse | Cigarette Litter | Motors, fans, high-current DC loads |
 | **-12 V**[cite: 13] | Fuse | Banana Jack | Op-Amp and audio circuits |
 | **+5 VSB**[cite: 13] | Internal | Indicator LED | Standby indicator power |
 | **0 - 30 V (Adj.)** | Fuse + V/A Meter | Banana Jack | Variable regulated bench output |
