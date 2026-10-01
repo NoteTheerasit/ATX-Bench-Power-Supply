@@ -74,3 +74,19 @@ $$I_{in} \approx \frac{24 \times 1.5}{0.85 \times 12} \approx 3.53\text{ A}$$
 $$P_{loss} = I^2 R$$
 
 $$P_{loss} = 10^2 \times 0.01 = 1\text{ W}$$
+
+---
+
+##6.Photographs
+* **Chang Potentiometer **
+
+<img width="1706" height="960" alt="94069" src="https://github.com/user-attachments/assets/887c2e54-95ca-44a7-9d93-0be7aaab2510" />
+
+* **Include all equipment in case **
+
+ <img width="960" height="1706" alt="94065" src="https://github.com/user-attachments/assets/cbee89f0-12fe-46a1-940c-9fcd1487fd08" />
+
+
+* **Test voltage and Meter **
+
+<img width="960" height="1706" alt="94061" src="https://github.com/user-attachments/assets/022bc891-a8cc-4c35-b653-92ee4c2970ef" />
