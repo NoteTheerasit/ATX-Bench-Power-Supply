@@ -1,7 +1,3 @@
-<img width="736" height="334" alt="image" src="https://github.com/user-attachments/assets/628dc937-4f30-440c-a31d-704947ef91af" /># ATX-Bench-Power-Supply
-#Project 1: ATX Bench Power Supply
-
----
 
 ## 1. Project Summary & Requirements
 
@@ -53,18 +49,28 @@ The original power supply is a **Lemel ATX500W** unit with a maximum combined po
 ---
 
 ## 4. Schematic & Circuit Design
+* **Final System Schematic Diagram:**
+<img width="1601" height="1111" alt="image" src="https://github.com/user-attachments/assets/2b4a6b02-8c2c-4569-a396-172b2e771dfc" />
+**Enclosure Mechanical & Panel Layout:**
 
-[Project.1_.ATX.Bench.Power.Supply.pdf](https://github.com/user-attachments/files/32916661/Project.1_.ATX.Bench.Power.Supply.pdf)
-
-
+  <img width="1076" height="1521" alt="94070" src="https://github.com/user-attachments/assets/4518c9d0-7536-4d54-8f71-afbc8ccae4fd" />
 
 ---
 
-## 5. Controls & Indicator Implementation
+## 5. Engineering Calculations & Thermal Sizing
 
-* **Power Switch (`PS_ON#`):** Pulls the green ATX wire down to `GND` via a latching toggle switch (`SW1`) to turn on the main power rails.
-* **Standby Indicator:** A dedicated LED powered from the `+5VSB` rail turns ON immediately once AC mains is connected.
-* **Power OK Indicator:** Connected to `PWR_OK` (Pin 8) to indicate stable output rails across the system.
-* **Variable Regulator:** Uses an `XY-SJVA-4X` buck-boost module:
-  * **RV1 (50k):** Voltage regulation (CV)
-  * **RV2 (1k):** Current limiting (CC)
+* **Overcurrent Protection Sizing:** Fast-acting inline fuses were integrated to protect the conductors, binding posts, and internal switching circuitry. The primary positive rails (+3.3V, +5V, +12V) are restricted to 10 A to prevent binding post heat damage, while the sensitive -12V rail is protected using a 0.5 A fuse to respect the PSU source threshold (0.8 A).
+
+* **Conductor Ampacity Verification:** The internal ATX wire harness uses standard 18 AWG copper conductors rated up to 16 A for chassis wiring. By capping line currents at 10 A via fuse selection, the operating margin remains well below the thermal limits of the insulation.
+
+* **Buck-Boost Converter Current Draw:** Powered from the +12V bus, the step-up/down regulator delivers variable output voltages. Assuming a full-load demand of 24 V at 1.5 A with a typical conversion efficiency ($\eta$) of 85%:
+
+$$I_{in} \approx \frac{V_{out} \times I_{out}}{\eta \times V_{in}}$$
+
+$$I_{in} \approx \frac{24 \times 1.5}{0.85 \times 12} \approx 3.53\text{ A}$$
+
+* **Connector Contact Power Dissipation:** Considering a nominal contact resistance ($R$) of $0.01\ \Omega$ at the banana terminals under a 10 A continuous load, terminal heat loss is determined by:
+
+$$P_{loss} = I^2 R$$
+
+$$P_{loss} = 10^2 \times 0.01 = 1\text{ W}$$
