@@ -1,28 +1,68 @@
 
-## 1. Project Summary & Requirements
+## Project Summary & Requirements
 
 * **Project Revision:** v1.0
 * **Team Members:**
   * Theerasit Khlaysamniang (6809107660130)
-  * Ploypeataii Khumphongphan (6809107660059)
-* **Source PSU Make/Model:** Lemel computer power supply 500W
-* **Project Summary:** Repurposing an enclosed standard ATX power unit into a multi-rail benchtop lab supply, integrating dedicated fixed DC voltage rails alongside a variable buck-boost regulator circuit.
-* **Accepted Requirements:**
-  * Route standard output voltages (+3.3V, +5V, +12V, -12V) to clearly marked output binding posts / banana sockets.
-  * Implement individual fuse protection on each active positive and negative rail.
-  * Integrate an external DC-DC buck-boost module for flexible voltage and current regulation.
-  * Install an external power switch (PS_ON) with dedicated LED status indicators for standby and active operation.
+  * Ploypeataii Khumphongphan (680910766005)
+---
+
+# ATX Bench Power Supply
+
+## 1. System Overview & Design Specifications
+
+### Power Supply Used
+* Lemel 500 W ATX Computer Power Supply
 
 ---
 
-## 2. Safety Considerations
-
-Safety was strictly considered throughout the modification process:
-* **Safety Boundary:** The original ATX enclosure remains closed at all times. All wiring work is performed only after physically disconnecting the AC power cable.
-* **Risk Assessment:** Primary hazards include output short circuits, excessive current draw, incorrect fuse rating selection, and thermal overload. Fuses are installed on all accessible output branches.
-* **Stop Conditions:** Immediately halt testing and remove AC power if unstable voltage, unexpected current, blown fuses, unusual odors, or excessive heat is detected.
+### Project Concept
+The original ATX power supply is redesigned into a compact bench-top DC power source. The existing voltage rails are brought to an accessible front panel, while an additional DC-DC converter provides adjustable output capability.
 
 ---
+
+### Main Design Features
+* Accessible Terminals: Route fixed DC voltages (+3.3 V, +5 V, +12 V, and −12 V) to dedicated front-panel binding posts.
+* Overcurrent Protection: Add separate fuse protection to all usable output rails.
+* Variable Regulation: Include an external buck-boost DC-DC converter for adjustable voltage and current control.
+* Power Control: Provide a dedicated PS_ON power-control switch for operating the ATX supply externally.
+* Status Indication: Integrate LED indicators to distinguish between standby and active operating states.
+* Front Panel Layout: Arrange all output terminals, controls, protection fuses, and visual indicators on an ergonomic, compact front panel.
+
+---
+
+### Target Output Specifications
+
+* Fixed Rail 1: +3.3 V DC (Regulated ATX Rail)
+* Fixed Rail 2: +5.0 V DC (Regulated ATX Rail)
+* Fixed Rail 3: +12.0 V DC (Regulated ATX Rail)
+* Fixed Rail 4: −12.0 V DC (Low-Current Reference Rail)
+* Variable Rail: 0–30.0 V DC (Buck-Boost Module Controlled)
+
+---
+
+## 2. Safety & Protection
+
+### Electrical Safety
+* Enclosure Integrity: Keep the original ATX power unit enclosed during normal operation.
+* Mains Isolation: Disconnect the AC mains power cable before carrying out any wiring, inspection, or internal modification.
+* Inspection Protocol: Thoroughly verify all polarity, grounding, and wiring connections before reconnecting the primary AC power source.
+
+---
+
+### Protection Measures
+* Identified Operational Risks: Potential hazards include short circuits, excessive load current, incorrect fuse selection, and component overheating.
+* Overcurrent Protection: Individual fuse protection is integrated on all accessible output channels to protect both the internal power supply circuitry and connected external loads.
+
+---
+
+### Testing Precautions & Emergency Shutdown
+Testing must be stopped immediately if any of the following abnormal operating conditions occur:
+* Unstable or fluctuating output voltage
+* Unexpected or uncontrolled current flow
+* Blown protection fuse
+* Unusual smell or evidence of burning components
+* Excessive temperature rise on heat sinks, wiring, or terminals
 
 ## 3. Power Supply Specifications
 
