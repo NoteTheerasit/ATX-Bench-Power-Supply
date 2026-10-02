@@ -57,27 +57,7 @@ The original power supply is a **Lemel ATX500W** unit with a maximum combined po
 
 ---
 
-## 5. Engineering Calculations & Thermal Sizing
-
-* **Overcurrent Protection Sizing:** Fast-acting inline fuses were integrated to protect the conductors, binding posts, and internal switching circuitry. The primary positive rails (+3.3V, +5V, +12V) are restricted to 10 A to prevent binding post heat damage, while the sensitive -12V rail is protected using a 0.5 A fuse to respect the PSU source threshold (0.8 A).
-
-* **Conductor Ampacity Verification:** The internal ATX wire harness uses standard 18 AWG copper conductors rated up to 16 A for chassis wiring. By capping line currents at 10 A via fuse selection, the operating margin remains well below the thermal limits of the insulation.
-
-* **Buck-Boost Converter Current Draw:** Powered from the +12V bus, the step-up/down regulator delivers variable output voltages. Assuming a full-load demand of 24 V at 1.5 A with a typical conversion efficiency ($\eta$) of 85%:
-
-$$I_{in} \approx \frac{V_{out} \times I_{out}}{\eta \times V_{in}}$$
-
-$$I_{in} \approx \frac{24 \times 1.5}{0.85 \times 12} \approx 3.53\text{ A}$$
-
-* **Connector Contact Power Dissipation:** Considering a nominal contact resistance ($R$) of $0.01\ \Omega$ at the banana terminals under a 10 A continuous load, terminal heat loss is determined by:
-
-$$P_{loss} = I^2 R$$
-
-$$P_{loss} = 10^2 \times 0.01 = 1\text{ W}$$
-
----
-
-## 6. Photographs
+## 5. Photographs
 * **Replacing Potentiometer 
 
 <img width="1706" height="960" alt="94069" src="https://github.com/user-attachments/assets/887c2e54-95ca-44a7-9d93-0be7aaab2510" />
